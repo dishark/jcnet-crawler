@@ -1,5 +1,10 @@
 var Crawler = require("crawler");
 var url = require('url');
+var type = process.argv[2];
+
+var url = type ?
+        'http://www.jcnet.com.br/classificados.php?tipo=' + type
+        : 'http://www.jcnet.com.br/classificados.php?tipo=EMPREGOS';
 
 var c = new Crawler({
     maxConnections : 10,
@@ -16,4 +21,4 @@ var c = new Crawler({
     }
 });
 
-c.queue('http://www.jcnet.com.br/classificados.php?tipo=EMPREGOS');
+c.queue(url);
