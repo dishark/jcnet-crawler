@@ -1,0 +1,15 @@
+{
+  "name": "jcnet-crawler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "crawler": "^0.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Hudson Pereira",
+  "license": "ISC"
+}
